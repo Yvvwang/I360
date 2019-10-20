@@ -1,0 +1,73 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+  background-image: url(../images/Back.jpg);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START YOUR STYLES HERE */
+body{
+  background-image: url(../images/Background.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+/*style the quotation*/
+.quotation{
+  color: white;
+  font-family: 'Cookie', cursive;
+  font-size: 40px;
+  margin: 130px auto;
+  padding: 2.0em 2.5em;
+}
+/*put the open quote around the quotation*/
+.quote::before{
+  content: open-quote;
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  color: #FFC300;
+}
+/*put the close quote around the quotation*/
+.quote::after{
+  content: close-quote;
+  font-size: 50px;
+  font-family: 'Cookie', cursive;
+  color:#5005C2;
+}
+/*put style for 'beautiful'*/
+.beautiful{
+  font-size: 55px;
+  color: #FFC300;
+}
+/*set style for 'death'*/
+.death{
+  font-size: 55px;
+  color:#5005C2;
+}
+/*set style for 'author'*/
+.author{
+  font-family: 'Qwigley', cursive;
+  padding: 1.0em 7.5em; 
+  font-size: 30px;
+}
